@@ -341,3 +341,166 @@ IMAGENES TEXTO SECCION INICIAL
     right: 3%;
     border-radius: 10%;
 }
+
+#checkbox-menu,
+#icono-rayas-menu,
+#icono-equis-menu {
+    display: none;
+}
+
+/* 
+--------------------------------------------------------------------------
+MEDIA QUERIES
+--------------------------------------------------------------------------
+*/
+
+@media (max-width: 767px) {
+
+    #icono-rayas-menu,
+    #icono-equis-menu {
+        display: block;
+    }
+
+    .caja-imagen-derecha,
+    .caja-imagen-izquierda,
+    .figura-celeste {
+        display: none;
+    }
+
+    .boton-navegacion {
+        position: absolute;
+        right: 2%;
+        top: 2%;
+        border: 2px solid black;
+        border-radius: 50%;
+        border-right: 4.5px solid black;
+        border-bottom: 4.5px solid black;
+        background-color: #F1B4D6;
+        height: clamp(40px, 100vw, 55px);
+        width: clamp(40px, 100vw, 55px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Optional: adds a shadow for depth */
+    }
+
+    .boton-navegacion #icono-rayas-menu {
+        height: 62%;
+    }
+    
+    .boton-navegacion #icono-equis-menu {
+        height: 80%;
+    }
+    
+    #icono-equis-menu {
+        display: none;
+    }
+
+    #checkbox-menu:checked ~ .boton-navegacion #icono-rayas-menu {
+        display: none;
+    }
+    
+    #checkbox-menu:checked ~ .boton-navegacion #icono-equis-menu {
+        display: inline;
+    }
+    
+    #checkbox-menu:checked ~ .boton-navegacion {
+        filter: brightness(0.87);
+    }  
+
+    #checkbox-menu:not(:checked) ~ .menu-navegacion {
+        pointer-events: none;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.5s ease, transform 0.5s ease; 
+    }
+    
+    #checkbox-menu:checked ~ .menu-navegacion {
+        pointer-events: auto;   
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .menu-navegacion {
+        position: absolute;
+        right: clamp(5%, 1vw, 5%);
+        top: clamp(70px, 14vw, 80px);
+        display: grid;
+        height: 4vh;
+        width: clamp(50px, 1vw, 80vw);
+    }
+
+    .item {
+        font-size: clamp(0.2rem, 4vw, 2rem);
+
+    }
+
+    .seccion-inicial {
+        height: 105vw;
+    }
+
+    .seccion-inicial .titulo-principal {
+        top: clamp(44vw, 38vw, 40vw);
+    }
+    
+    .gulfs.titulo-principal span {
+        display: block;
+        text-align: center;
+        height: clamp(8.5vw, 1vw, 10vw);
+        font-size: clamp(11vw, 1vw, 15vw);
+    }
+    
+    .seccion-inicial .caja-imagen-central {
+        top: clamp(43vw, 37vw, 50vw);
+        border-radius: 30%;
+        margin: auto;
+    }
+    
+    #imagen-principal {
+        width: 65vw;
+        height: 85vw;
+    }
+    
+    .circulo-sonriente {
+        left: clamp(40px, 1vw, 60px);
+        width: clamp(80px, 25vw, 170px);
+        top: clamp(140vw, 1vw, 150vw);
+    }
+    
+    .rayo {
+        right: clamp(3vw, 1vw, 4vw);
+        top: clamp(75vw, 1vw, 80vw);
+        width: clamp(12vw, 10vw, 15vw);
+    }
+    
+    .estrella1 {
+        right: clamp(5.5vw, 1vw, 6vw);
+        top: clamp(86vw, 1vw, 90vw);
+        width: clamp(20px, 3vw, 40px);    
+    }
+    
+    .estrella2 {
+        left: clamp(5.5vw, 1vw, 6vw);
+        top: clamp(54vw, 1vw, 59vw);
+        width: clamp(15px, 1vw, 25px);   
+    }
+    
+    .estrella3 {
+        left: clamp(3vw, 1vw, 6vw);
+        top: clamp(76vw, 1vw, 89vw);
+        width: clamp(30px, 6vw, 40px);    
+    }
+    
+    .figura-celeste {
+        left: 25%;
+        top: 40.5vw;
+        width: clamp(65px, 10vw, 130px); 
+        animation: spin 10s linear infinite;
+    }
+
+    .boton-chat {
+        right: 2vw;
+    }
+}
+
