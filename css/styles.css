@@ -106,3 +106,178 @@ ANIMACIONES GENERALES
     }
   }
 
+/* 
+-----------------------------------------------------------------------------
+BOTÓN DE CHAT 
+-----------------------------------------------------------------------------
+*/
+
+.boton-chat {
+    position: fixed;
+    bottom: 2%; /* Positions the button 2% from the bottom */
+    right: 1%;  /* Positions the button 2% from the right */
+    width: clamp(58px, 10vw, 72px); /* Slightly reduced middle value for responsiveness */
+    height: clamp(58px, 10vw, 72px);
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: #FFF35F;
+    display: flex;           /* Centers any content inside the button */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8); /* Optional: adds a shadow for depth */
+}
+
+.boton-chat p {
+    font-weight: 900;
+    font-family: sans-serif;
+    font-size: clamp(1.5rem, 4vw, 2rem); /* Responsive font size */
+    margin: 0;
+}
+
+/* 
+-----------------------------------------------------------------------------
+SECCIONES DE LA PAGINA
+-----------------------------------------------------------------------------
+*/
+
+.contenedor-grid {
+    display: grid;
+    grid-template-rows: repeat(5, minmax(300px, auto));
+}
+
+.seccion-inicial {
+    background-color: #F1B4D6;
+    border-bottom: 2px solid black;
+    height: 45vw;
+}
+
+.seccion-nosotros {
+    background-color: #FFF35F;
+}
+
+.seccion-galeria {
+    background-color: orangered;
+}
+
+.seccion-precios {
+    background-color: aliceblue;
+}
+
+.seccion-contacto {
+    background-color: #F1B4D6;
+}
+
+/* 
+-----------------------------------------------------------------------------
+MENU DE NAVEGACIÓN
+-----------------------------------------------------------------------------
+*/
+
+.menu-navegacion {
+    position: absolute;
+    right: 0%;
+    top: 2%;
+    display: flex;
+    height: 4vh;
+    width: 50vw;
+    justify-content: end;
+}
+
+.item {
+    display: inline-block;
+    margin-right: 7%;
+}
+
+.item1 {
+    background-image: url('../img/heart.svg');
+    background-size: 16px 16px; /* Adjust size as needed */
+    background-repeat: no-repeat;
+    background-position: 0 20%; /* Align image to the left and vertically centered */
+    padding-left: 24px; /* Space to the left to accommodate the image */
+}
+
+.item2 {
+    background-image: url('../img/estrella.svg');
+    background-size: 16px 16px; /* Adjust size as needed */
+    background-repeat: no-repeat;
+    background-position: 0 20%; /* Align image to the left and vertically centered */
+    padding-left: 24px; /* Space to the left to accommodate the image */
+}
+
+.item3 {
+    background-image: url('../img/figura.svg');
+    background-size: 16px 16px; /* Adjust size as needed */
+    background-repeat: no-repeat;
+    background-position: 0 20%; /* Align image to the left and vertically centered */
+    padding-left: 24px; /* Space to the left to accommodate the image */
+}
+
+.item4 {
+    background-image: url('../img/polvora.svg');
+    background-size: 16px 16px; /* Adjust size as needed */
+    background-repeat: no-repeat;
+    background-position: 0 20%; /* Align image to the left and vertically centered */
+    padding-left: 24px; /* Space to the left to accommodate the image */
+}
+
+.item:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+/* 
+-----------------------------------------------------------------------------
+IMAGENES TEXTO SECCION INICIAL
+-----------------------------------------------------------------------------
+*/
+
+.seccion-inicial h1{
+    color: #1357EB;
+    font-size: clamp(1.5rem, 6vw, 5rem);
+
+}
+
+.seccion-inicial .titulo-principal {
+    position: relative;
+    margin: auto;
+    max-width: fit-content;
+    top: 9vw;
+    z-index: 1;
+}
+
+.gulfs.titulo-principal span {
+    display: block;
+    text-align: center;
+    height: 4.8vw;
+}
+
+.seccion-inicial .caja-imagen {
+    position: relative;
+    top: 8vw;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 40vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+#imagen-principal {
+    width: 40vw;
+    height: 55vw;
+}
+
+.circulo-sonriente {
+    right: 14%;
+    width: 12vw;
+    top: 39vw;
+    animation: spin 7s linear infinite;
+}
+
+.rayo {
+    right: 20%;
+    top: 55%;
+}
+
