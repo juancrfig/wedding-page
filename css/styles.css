@@ -40,6 +40,16 @@ svg {
     position: absolute;
 }
 
+.caja-imagen {
+    position: relative;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    border: 2px solid black;
+}
+
 /* 
 -----------------------------------------------------------------------------
 ANIMACIONES GENERALES
@@ -58,6 +68,10 @@ ANIMACIONES GENERALES
 
 .boton:active {
     animation: pressButton 0.2s ease;
+}
+
+.estrella {
+    animation: twinkle-and-move 2.5s infinite ease-in-out 0.4s;
 }
 
 @keyframes pressButton {
@@ -151,19 +165,20 @@ SECCIONES DE LA PAGINA
     height: 45vw;
 }
 
-.seccion-nosotros {
+#seccion-nosotros {
     background-color: #FFF35F;
+    height: 85vw;
 }
 
-.seccion-galeria {
+#seccion-galeria {
     background-color: orangered;
 }
 
-.seccion-precios {
+#seccion-precios {
     background-color: aliceblue;
 }
 
-.seccion-contacto {
+#seccion-contacto {
     background-color: #F1B4D6;
 }
 
@@ -251,17 +266,10 @@ IMAGENES TEXTO SECCION INICIAL
     height: 4.8vw;
 }
 
-.seccion-inicial .caja-imagen {
-    position: relative;
+.seccion-inicial .caja-imagen-central {
     top: 8vw;
-    margin: auto;
-    border: 2px solid black;
     border-radius: 40vw;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    width: fit-content;
-    height: fit-content;
+    margin: auto;
 }
 
 #imagen-principal {
@@ -277,7 +285,58 @@ IMAGENES TEXTO SECCION INICIAL
 }
 
 .rayo {
-    right: 20%;
-    top: 55%;
+    right: 16%;
+    top: 27vw;
+    width: clamp(65px, 12vw, 200px);
+    animation: tilt 2s ease-in-out infinite;
+    z-index: 1;
 }
 
+.estrella1 {
+    right: 25%;
+    top: 35vw;
+    width: clamp(10px, 3vw, 80px);    
+}
+
+.estrella2 {
+    left: 20%;
+    top: 16vw;
+    width: clamp(10px, 3vw, 80px);    
+}
+
+.estrella3 {
+    left: 24%;
+    top: 28vw;
+    width: clamp(18px, 6vw, 100px);    
+}
+
+.figura-celeste {
+    left: 25%;
+    top: 40.5vw;
+    width: clamp(65px, 10vw, 130px); 
+    animation: spin 10s linear infinite;
+}
+
+.caja-imagen-izquierda {
+    position: absolute;
+    top: 32vw;
+    left: -6%;
+    border-radius: 10%;
+}
+
+#imagen-inicial-izquierda {
+    width: 28vw;
+    height: 38vw;    
+}
+
+#imagen-inicial-derecha {
+    width: 17vw;
+    height: 22vw; 
+}
+
+.caja-imagen-derecha {
+    position: absolute;
+    top: 13vw;
+    right: 3%;
+    border-radius: 10%;
+}
