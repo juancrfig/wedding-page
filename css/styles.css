@@ -357,21 +357,26 @@ SECCIÓN NOSOTROS
 .boton1 {
     top: clamp(80vw ,1vw, 20vw);
     left: clamp(2.5vw ,1vw, 2.5vw);
+    animation: pressButton  2s ease-in-out infinite;
 }
 
 .boton2 {
     top: clamp(80vw ,1vw, 20vw);
     right: clamp(2.5vw ,1vw, 2.5vw);
+    animation: pressButton  2s ease-in-out infinite;
 }
 
 .boton3 {
     top: clamp(135vw ,1vw, 20vw);
-    left: clamp(2.5vw ,1vw, 2.5vw);   
+    left: clamp(2.5vw ,1vw, 2.5vw); 
+    animation: pressButton  2s ease-in-out infinite;  
 }
 
 .boton4 {
     top: clamp(135vw ,1vw, 20vw);
     right: clamp(2.5vw ,1vw, 2.5vw);    
+    animation: pressButton  2s ease-in-out infinite;
+
 }
 
 .mensaje-botones {
@@ -490,12 +495,22 @@ SECCIÓN NOSOTROS
     right: 21%;
     top: 122.5vw;
     width: clamp(65px, 10vw, 130px); 
+    animation: tilt 2s ease-in-out infinite;
 }
 
 .polvora-roja {
     right: 13%;
     top: 121vw;
     width: clamp(65px, 10vw, 130px); 
+    animation: tilt 2s ease-in-out infinite;
+}
+
+.ovalo-blanco {
+    width: 30vw;
+    height: 9.5vw;
+    right: 27vw;
+    top: 88vw;
+    transform: rotate(-12deg);
 }
 
 /* 
