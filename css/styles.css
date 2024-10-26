@@ -281,7 +281,7 @@ IMAGENES TEXTO SECCION INICIAL
 .circulo-sonriente {
     right: 14%;
     width: 12vw;
-    top: 39vw;
+    top: 54vw;
     animation: spin 7s linear infinite;
 }
 
@@ -313,7 +313,7 @@ IMAGENES TEXTO SECCION INICIAL
 
 .figura-celeste {
     left: 25%;
-    top: 40.5vw;
+    top: 55vw;
     width: clamp(65px, 10vw, 130px); 
     animation: spin 10s linear infinite;
 }
@@ -386,12 +386,12 @@ SECCIÓN NOSOTROS
 
 .mensaje-izquierdo {
     top: clamp(81vw ,1vw, 80vw);
-    left: clamp(7vw , 10vw, 11vw);
+    left: clamp(75px , 7vw, 8vw);
 }
 
 .mensaje-derecho {
     top: clamp(81vw ,1vw, 81vw);
-    right: clamp(10vw ,1vw, 11vw);
+    right: clamp(75px ,7vw, 8vw);
 }
 
 #pareja-confeti {
@@ -444,16 +444,58 @@ SECCIÓN NOSOTROS
 #seccion-nosotros .titulo-principal {
     position: absolute;
     display: flex;
+    flex-direction: column;
     max-width: fit-content;
-    top: 90vw;
-    right: 5vw;
-    font-family: "Gulfs Display";
-    font-size: clamp(4rem, 4rem, 5rem);
-    color: black;
+    max-height: fit-content;
+    top: 86vw;
+    right: 22.5vw;
+    font-size: clamp(5.5vw, 11vw, 12rem);
+    color: transparent;
+    -webkit-text-stroke: 3px #1357EB;
+    margin: auto;
 }
 
-.gulfs.titulo-principal span {
+#seccion-nosotros .gulfs.titulo-principal span {
     display: block;
+    text-align: center;
+    height: fit-content;
+    height: 8.5vw;
+}
+
+#seccion-nosotros .descripcion {
+    position: absolute;
+    font-family: sans-serif;
+    font-weight: 600;
+    top: 104vw;
+    right: 9vw;
+    width: 50vw;
+    height: 25vw;
+    padding: 5%;
+    line-height: 1.6vw;
+    font-size: clamp(1.4vw, 1.4vw, 2rem);
+}
+
+#seccion-nosotros .mensaje-inferior {
+    position: absolute;
+    font-family: "Gulfs Display";
+    font-weight: 400;
+    top: 125vw;
+    right: 3vw;
+    width: 51vw;
+    font-size: clamp(2.1vw, 2.1vw, 2.5rem);
+
+}
+
+.anillos {
+    right: 21%;
+    top: 122.5vw;
+    width: clamp(65px, 10vw, 130px); 
+}
+
+.polvora-roja {
+    right: 13%;
+    top: 121vw;
+    width: clamp(65px, 10vw, 130px); 
 }
 
 /* 
