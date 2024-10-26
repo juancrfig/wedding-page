@@ -162,7 +162,7 @@ SECCIONES DE LA PAGINA
 .seccion-inicial {
     background-color: #F1B4D6;
     border-bottom: 2px solid black;
-    height: 45vw;
+    height: 60vw;
 }
 
 #seccion-nosotros {
@@ -346,6 +346,114 @@ IMAGENES TEXTO SECCION INICIAL
 #icono-rayas-menu,
 #icono-equis-menu {
     display: none;
+}
+
+/* 
+--------------------------------------------------------------------------
+SECCIÓN NOSOTROS
+--------------------------------------------------------------------------
+*/
+
+.boton1 {
+    top: clamp(80vw ,1vw, 20vw);
+    left: clamp(2.5vw ,1vw, 2.5vw);
+}
+
+.boton2 {
+    top: clamp(80vw ,1vw, 20vw);
+    right: clamp(2.5vw ,1vw, 2.5vw);
+}
+
+.boton3 {
+    top: clamp(135vw ,1vw, 20vw);
+    left: clamp(2.5vw ,1vw, 2.5vw);   
+}
+
+.boton4 {
+    top: clamp(135vw ,1vw, 20vw);
+    right: clamp(2.5vw ,1vw, 2.5vw);    
+}
+
+.mensaje-botones {
+    position: absolute;
+    color: black;
+    z-index: 5;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.05rem;
+    font-size: clamp(1rem, 1.2rem, 2rem);
+}
+
+.mensaje-izquierdo {
+    top: clamp(81vw ,1vw, 80vw);
+    left: clamp(7vw , 10vw, 11vw);
+}
+
+.mensaje-derecho {
+    top: clamp(81vw ,1vw, 81vw);
+    right: clamp(10vw ,1vw, 11vw);
+}
+
+#pareja-confeti {
+    height: 40vw;
+    width:29vw;
+    border: 2px solid black;
+}
+
+.marco {
+    position: absolute;
+    transform: rotate(-4deg);
+    height: 41.5vw;
+    width:29vw;
+}
+
+.marco-interior {
+    top: clamp(86vw ,1vw, 86vw);
+    left: clamp(13vw ,1vw, 10vw);
+    border-color: whitesmoke;
+    border-width: 0.8vw;
+    outline: 2px solid black;
+    z-index: 11;
+}
+
+.marco-medio {
+    background-color: #ffffff;
+    top: clamp(87vw ,1vw, 86vw);
+    left: clamp(12vw ,1vw, 10vw);
+    z-index: 10;
+    height: 42vw;
+    width: 29vw;
+    border: 2vw solid black;
+    border-color: #F1B4D6;
+    outline: 2px solid black;
+
+}
+
+.marco-exterior {
+    background-color: #ffffff;
+    top: clamp(89vw ,1vw, 88.5vw);
+    left: clamp(11vw ,1vw, 9vw);
+    z-index: 10;
+    height: 41.5vw;
+    width: 29vw;
+    border: 2vw solid black;
+    border-color: #F1B4D6;
+    outline: 2px solid black;
+}
+
+#seccion-nosotros .titulo-principal {
+    position: absolute;
+    display: flex;
+    max-width: fit-content;
+    top: 90vw;
+    right: 5vw;
+    font-family: "Gulfs Display";
+    font-size: clamp(4rem, 4rem, 5rem);
+    color: black;
+}
+
+.gulfs.titulo-principal span {
+    display: block;
 }
 
 /* 
