@@ -545,33 +545,114 @@ SECCIÓN GALERIA
 
 #seccion-galeria {
     border-top: 2px solid black;
-    height: 55vw;
+    height: 76vw;
+    border-bottom: 2px solid black;
+    overflow: hidden;
 } 
 
 .area-blanca {
     position: absolute;
-    height: 33vw;
-    width: 100vw;
+    height: 52vw;
+    width: 100%;
     background-color: #ffe9f5;
 }
 
 .caja-grid {
     display: grid;
     position: absolute;
-    border: 2px solid black;
     margin-top: 4%;
     width: 100%;
-    height: 46vw;
+    height: 61.5vw;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+    grid-gap: 3.5%;
 }
 
 #seccion-galeria .caja-imagen {
-    border-radius: 25%;
-    /* height: 150px;
-    width: 150px; */
+    border-radius: 18%;
+    display: inline-block;
+    position: relative;
 }
 
+.imagen-galeria {
+    height: 30vw; 
+    width: 20vw;  
+}
+
+.caja-imagen.foto-uno {
+    position: relative;
+    grid-area: 1 / 1 / 1 / 5;
+    left: -3.7vw;
+}
+
+.caja-imagen.foto-dos {
+    grid-area: 1 / 5 / 1 / 10;
+    left: -3vw;
+
+}
+
+.caja-imagen.foto-tres {
+    grid-area: 1 / 10 / 1 / 17;
+    left: -5vw
+}
+
+.imagen-galeria.imagen3 {
+    width: 100%;
+}
+
+.caja-imagen.foto-cuatro {
+    grid-area: 1 / 17 / 1 / 23;
+    left: -5vw;
+}
+
+.caja-imagen.foto-cinco {
+    position: absolute;
+    grid-area: 1 / 16 / 1 / 23;
+    width: 18vw;
+    height: 30vw;
+    border-radius: 10%;
+    transform: translateX(96vw);
+    top: 4vw;
+}
+
+.caja-imagen.foto-seis {
+    grid-area: 2 / 1 / 3 / 8;
+    width: 40vw;
+    left: -5vw;
+    margin-top: 1.5vw;
+}
+
+.imagen-galeria.imagen6 {
+    position: relative;
+    width: 100%;
+}
+
+
+.caja-imagen.foto-siete {
+    grid-area: 2 / 9 / 3 / 14;
+    margin-top: 1.5vw;
+    left: -2.5vw;
+}
+
+.caja-imagen.foto-ocho {
+    grid-area: 2 / 14 / 3 / 20;
+    margin-top: 1.5vw;
+    width: 30vw;
+    left: -4vw;
+}
+
+.imagen-galeria.imagen8 {
+    width: 30vw;
+}
+
+.caja-imagen.foto-nueve {
+    position: absolute;
+    width: 18vw;
+    height: 30vw;
+    border-radius: 10%;
+    top: 37.6vw;
+    left: 72vw;
+}
 
 /* 
 --------------------------------------------------------------------------
