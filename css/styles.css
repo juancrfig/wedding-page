@@ -171,7 +171,7 @@ SECCIONES DE LA PAGINA
 }
 
 #seccion-galeria {
-    background-color: orangered;
+    background-color: #FF6541;
 }
 
 #seccion-precios {
@@ -416,6 +416,7 @@ SECCIÓN NOSOTROS
     height: 41.5vw;
     --original-width: 29vw;
     width:29vw;
+    box-shadow: 6px 4px 9px rgba(0, 0, 0, 0.9); /* Optional: adds a shadow for depth */
 }
 
 .marco-interior {
@@ -535,6 +536,42 @@ SECCIÓN NOSOTROS
     top: 88vw;
     transform: rotate(-12deg);
 }
+
+/* 
+--------------------------------------------------------------------------
+SECCIÓN GALERIA
+--------------------------------------------------------------------------
+*/
+
+#seccion-galeria {
+    border-top: 2px solid black;
+    height: 55vw;
+} 
+
+.area-blanca {
+    position: absolute;
+    height: 33vw;
+    width: 100vw;
+    background-color: #ffe9f5;
+}
+
+.caja-grid {
+    display: grid;
+    position: absolute;
+    border: 2px solid black;
+    margin-top: 4%;
+    width: 100%;
+    height: 46vw;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#seccion-galeria .caja-imagen {
+    border-radius: 25%;
+    /* height: 150px;
+    width: 150px; */
+}
+
 
 /* 
 --------------------------------------------------------------------------
@@ -709,7 +746,7 @@ MEDIA QUERIES
     #seccion-nosotros .mensaje-inferior,
     .anillos,
     .polvora-roja {
-        top: calc(var(--original-top) + 91vw);
+        top: calc(var(--original-top) + 94vw);
     }
 
     #seccion-nosotros .titulo-principal {
@@ -722,7 +759,7 @@ MEDIA QUERIES
     }
     
     #seccion-nosotros .descripcion {
-        top: 215vw;
+        top: 219vw;
         left: 1vw;
         width: 84vw;
         height: 40vw;
@@ -732,7 +769,7 @@ MEDIA QUERIES
     
     #seccion-nosotros .mensaje-inferior {
         font-weight: 400;
-        top: 270vw;
+        top: 275vw;
         left: 6vw;
         width: 51vw;
         font-size: clamp(3vw, 2.1vw, 2.5rem);
@@ -741,13 +778,13 @@ MEDIA QUERIES
     
     .anillos {
         left: 40vw;
-        top: 265vw;
+        top: 267vw;
         width: 18vw; 
     }
     
     .polvora-roja {
         left: 58vw;
-        top: 264vw;
+        top: 266vw;
         width: 15vw; 
     }
     
@@ -764,7 +801,17 @@ MEDIA QUERIES
         top: calc(var(--original-top) + 202vw);
         left: 12vw;
         width: 80vw;
-        height: 90vw;
+        height: 91.5vw;
+    }
+
+    .marco-medio {
+        left:10vw;
+        top: calc(var(--original-top) + 203vw)
+    }
+
+    .marco-exterior {
+        left:8vw;
+        top: calc(var(--original-top) + 203.5vw)
     }
 
     #pareja-confeti {
